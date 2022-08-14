@@ -17,7 +17,7 @@
 </head>
 
 <body class="body">
-    <header class="header">
+    <header id="start-web" class="header">
         <div class="container">
             <nav class="nav">
                 <div class="nav__left">
@@ -41,8 +41,10 @@
                     <div class="nav__contacts">
                         <a class="number" href="tel:+7(775)976 08 77">+7(775)976 08 77</a>
                         <a href="#"><img src="./img/header-nav-whatsupp.svg" alt=""></a>
-                        <a href="https://m.facebook.com/zharnamaprint/?locale=ru_RU"><img src="./img/header-nav-facebook.svg" alt=""></a>
-                        <a href="https://www.instagram.com/design_zharnama/"><img src="./img/header-nav-instagram.svg" alt=""></a>
+                        <a href="https://m.facebook.com/zharnamaprint/?locale=ru_RU"><img
+                                src="./img/header-nav-facebook.svg" alt=""></a>
+                        <a href="https://www.instagram.com/design_zharnama/"><img src="./img/header-nav-instagram.svg"
+                                alt=""></a>
                     </div>
                 </div>
             </nav>
@@ -57,44 +59,61 @@
                 </div>
             </div>
         </section>
+        <div class="container">
+            <div class="element-animation">
+                <a href=""><img src="./img/scroll-up-button.png" alt=""></a>
+            </div>
+            <script type="text/javascript">
+                var mainNav = document.querySelector('.element-animation');
+            
+                window.onscroll = function () {
+                  windowScroll();
+                };
+            
+                function windowScroll() {
+                  mainNav.classList.toggle("element-show", mainNav.scrollTop > 50 || document.documentElement.scrollTop > 50);
+                }
+              </script>
+        </div>
         <section class="what-waiting">
             <div class="container">
                 <h3>Что ждут клиенты от нашей компании ZHARNAMA PRINT:</h3>
-            <div class="what-waiting__content">
-                <div class="what-waiting__image">
-                    <img src="./img/what-waiting-image.png" alt="">
+                <div class="what-waiting__content">
+                    <div class="what-waiting__image">
+                        <img src="./img/what-waiting-image.png" alt="">
+                    </div>
+                    <div class="what-waiting__text">
+                        <div class="wwt__check-and-text">
+                            <img src="./img/what-waiting-check-mark.png" alt="">
+                            <p>Чтобы заказ сделали оперативно, качественно и без очередей</p>
+                        </div>
+                        <div class="wwt__check-and-text">
+                            <img src="./img/what-waiting-check-mark.png" alt="">
+                            <p>Понять за что ты платишь</p>
+                        </div>
+                        <div class="wwt__check-and-text">
+                            <img src="./img/what-waiting-check-mark.png" alt="">
+                            <p>Продукцию сделали в срок , а еще чтобы сделали доставку</p>
+                        </div>
+                        <div class="wwt__check-and-text">
+                            <img src="./img/what-waiting-check-mark.png" alt="">
+                            <p>Чтобы можно было сделать в одной полиграфии: от разработки дизайна до полной комплектации
+                                продукции</p>
+                        </div>
+                        <div class="wwt__check-and-text">
+                            <img src="./img/what-waiting-check-mark.png" alt="">
+                            <p>Чтобы было идти недалеко , или из дома заказать</p>
+                        </div>
+                        <div class="wwt__check-and-text">
+                            <img src="./img/what-waiting-check-mark.png" alt="">
+                            <p>Чтобы все было современно и модно</p>
+                        </div>
+                        <div class="wwt__check-and-text">
+                            <img src="./img/what-waiting-check-mark.png" alt="">
+                            <p>Помогли с креативом и интересными фишками</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="what-waiting__text">
-                    <div class="wwt__check-and-text">
-                        <img src="./img/what-waiting-check-mark.png" alt="">
-                        <p>Чтобы заказ сделали оперативно, качественно и без очередей</p>
-                    </div>
-                    <div class="wwt__check-and-text">
-                        <img src="./img/what-waiting-check-mark.png" alt="">
-                        <p>Понять за что ты платишь</p>
-                    </div>
-                    <div class="wwt__check-and-text">
-                        <img src="./img/what-waiting-check-mark.png" alt="">
-                        <p>Продукцию сделали в срок , а еще чтобы сделали доставку</p>
-                    </div>
-                    <div class="wwt__check-and-text">
-                        <img src="./img/what-waiting-check-mark.png" alt="">
-                        <p>Чтобы можно было сделать в одной полиграфии: от разработки дизайна до полной комплектации продукции</p>
-                    </div>
-                    <div class="wwt__check-and-text">
-                        <img src="./img/what-waiting-check-mark.png" alt="">
-                        <p>Чтобы было идти недалеко , или из дома заказать</p>
-                    </div>
-                    <div class="wwt__check-and-text">
-                        <img src="./img/what-waiting-check-mark.png" alt="">
-                        <p>Чтобы все было современно и модно</p>
-                    </div>
-                    <div class="wwt__check-and-text">
-                        <img src="./img/what-waiting-check-mark.png" alt="">
-                        <p>Помогли с креативом и интересными фишками</p>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
         <section class="cooperation">
@@ -104,32 +123,40 @@
                     <div class="cooperation__block--left">
                         <div class="cb__content">
                             <span>1</span>
-                            <p>Удобно расположенную по улице Молдагуловой 39 полиграфию, которая работает с 10.00 до 20.00 без выходных.</p>
+                            <p>Удобно расположенную по улице Молдагуловой 39 полиграфию, которая работает с 10.00 до
+                                20.00 без выходных.</p>
                         </div>
                         <div class="cb__content">
                             <span>2</span>
-                            <p>Услугу : «онлайн заказ» 
-                                Заказываешь услугу из дома или офиса и получаешь без очереди. 
-                                Мы максимально упростили и ускорили процесс. Во время изготовления продукции всегда на связи с клиентом, фиксируем процесс по ватсаппу. Перед нанесением всегда утверждаем с заказчиком, фактически процесс проходит в режиме онлайн, прозрачно.</p>
+                            <p>Услугу : «онлайн заказ»
+                                Заказываешь услугу из дома или офиса и получаешь без очереди.
+                                Мы максимально упростили и ускорили процесс. Во время изготовления продукции всегда на
+                                связи с клиентом, фиксируем процесс по ватсаппу. Перед нанесением всегда утверждаем с
+                                заказчиком, фактически процесс проходит в режиме онлайн, прозрачно.</p>
                         </div>
                         <div class="cb__content">
                             <span>3</span>
-                            <p>Доставку: если «горит» в течении часа через курьерские службы, при этом делимся ссылкой маршрута курьера, а можно и подождать и при этом продукция хранится у нас.</p>
+                            <p>Доставку: если «горит» в течении часа через курьерские службы, при этом делимся ссылкой
+                                маршрута курьера, а можно и подождать и при этом продукция хранится у нас.</p>
                         </div>
                         <div class="cb__content">
                             <span>4</span>
-                            <p>Широкий ассортимент полиграфических услуг, предлагаем решения и подскажем как лучше и интереснее сделать.</p>
+                            <p>Широкий ассортимент полиграфических услуг, предлагаем решения и подскажем как лучше и
+                                интереснее сделать.</p>
                         </div>
                     </div>
                     <div class="cooperation__block--right">
                         <div class="cb__content">
                             <span>5</span>
-                            <p>Футболки, толстовки, свитшоты, маски и другая продукция очень качественная, ведь мы тщательно подходим к выбору поставщиков и работаем напрямую с производителями 
+                            <p>Футболки, толстовки, свитшоты, маски и другая продукция очень качественная, ведь мы
+                                тщательно подходим к выбору поставщиков и работаем напрямую с производителями
                                 без посредников.</p>
                         </div>
                         <div class="cb__content">
                             <span>6</span>
-                            <p>Индивидуальную работу с нашими профессиональными дизайнерами, ведь у нас есть молодые талантливые сотрудники, которые работают в офисе, а также удаленные дизайнеры из города Алматы и Петербурга, Москвы.</p>
+                            <p>Индивидуальную работу с нашими профессиональными дизайнерами, ведь у нас есть молодые
+                                талантливые сотрудники, которые работают в офисе, а также удаленные дизайнеры из города
+                                Алматы и Петербурга, Москвы.</p>
                         </div>
                         <div class="cb__content">
                             <span>7</span>
@@ -139,7 +166,277 @@
                 </div>
             </div>
         </section>
+        <section class="improving-section">
+            <div class="container">
+                <div class="is__box">
+                    <h3>Мы совершенствуемся каждый день, каждый час и минуту благодаря нашим клиентам!</h3>
+                    <p>Каждый из Вас помогает стать лучше, ведь Ваши заказы индивидуальные и уникальные.</p>
+                    <p>Бывают сложные работы, где надо принять нестандартные решения, все это обговариваем, свои
+                        недочеты признаем и предлагаем замену, вплоть до возврата оплаты. Для нас важна честность и
+                        прозрачность в наших деловых отношениях.</p>
+                    <p>Помните: все проблемы разрешаемы и прежде всего приоритет: хорошее отношение, ведь живем все
+                        вместе в одной нашей стране Казахстан!</p>
+                </div>
+            </div>
+        </section>
+        <section class="our-services-section">
+            <div class="container">
+                <h3>Наши услуги</h3>
+                <div class="our-ss__box">
+                    <div class="our-ss__cards">
+                        <p>Печать на футболках</p>
+                        <p>Принты <br> на толстовках, свитшотах</p>
+                        <p>Принты на масках, сумках</p>
+                        <p>Печать на кружках,тарелках</p>
+                        <p>Печать на кепках</p>
+                        <p>Сублимационная печать</p>
+                        <p>Флексовая печать</p>
+                        <p>Копирование и сканирование</p>
+                        <p>Печать на магнитах</p>
+                    </div>
+                    <div class="our-ss__cards">
+                        <p>Печать из файлов </p>
+                        <p>Ламинирование документов</p>
+                        <p>Брошюровка (металлическая и пластмассовая), скоба</p>
+                        <p>Календари</p>
+                        <p>Визитки</p>
+                        <p>Буклеты</p>
+                        <p>Каталоги</p>
+                        <p>Листовки</p>
+                    </div>
+                    <div class="our-ss__cards">
+                        <p>Плакаты</p>
+                        <p>Открытки</p>
+                        <p>Бейджи</p>
+                        <p>Приглашения</p>
+                        <p>Дипломы, грамоты, сертификаты</p>
+                        <p>Печать меню</p>
+                        <p>Фото на документы</p>
+                        <p>Распечатка фото</p>
+                        <p>Фотоколлаж</p>
+                    </div>
+                    <div class="our-ss__cards">
+                        <p>Обработка фото</p>
+                        <p>Заказ на дизайн</p>
+                        <p>Разработка фирменного стиля</p>
+                        <p>Разработка дизайна на банеры и стенды</p>
+                        <p>Изготовление самоклеек и стикеров</p>
+                        <p>Изготовление банеров</p>
+                        <p>Изготовление табличек</p>
+                        <p>Печать наклеек</p>
+                        <p>Продажа футболок ,худи и свитшотов для сублимации и флексового нанесения</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-working-section">
+            <div class="container">
+                <h3>Как мы работаем</h3>
+                <div class="hws__box">
+                    <div class="hws__block--left">
+                        <img src="./img/how-working-phone.png" alt="">
+                    </div>
+                    <div class="hws__block--right">
+                        <div class="hws__br__timeline">
+                            <ol>
+                                <li>
+                                    <p>Знакомство с клиентом, описание заказа</p>
+                                </li>
+                                <li>
+                                    <p>Мы скидываем примеры своих работ, также ссылку на инстаграм</p>
+                                </li>
+                                <li>
+                                    <p>Отработка заказа, исходные данные от клиента и все это отправляем дизайнеру</p>
+                                </li>
+                                <li>
+                                    <p>Макет от дизайнера клиенту даем на утверждение, обсуждаем детали рисунка,
+                                        вносим изменения и корректировки.</p>
+                                </li>
+                                <li>
+                                    <p>Подбор футболки, толстовки: цвет, размер, ткань, производителя. Делаем замеры в
+                                        случае необходимости.</p>
+                                </li>
+                                <li>
+                                    <p>Макет готов, футболка тоже, запускаем в производство</p>
+                                </li>
+                                <li>
+                                    <p>Распечатываем рисунок на бумаге, выясняем место расположения рисунка</p>
+                                </li>
+                                <li>
+                                    <p>Заказ выполнен, упаковываем, кладем инструкцию,
+                                        планер в подарок</p>
+                                </li>
+                                <li>
+                                    <p>Доставка по индрайверу или самовывоз</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="online-order-section">
+            <div class="container">
+                <div class="oos__block">
+                    <h3>Преимущество онлайн заказа</h3>
+                    <div class="oos__cards-box oos__cards-box-mb">
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-cursor-icon.png" alt="">
+                            <p class="oos__hov-p">Заказ 24/7</p>
+                        </div>
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-delete-icon.png" alt="">
+                            <p class="oos__hov-p">Без предоплаты до 1000 рублей</p>
+                        </div>
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-clock-icon.png" alt="">
+                            <p class="oos__hov-p">К оговоренному заранее времени</p>
+                        </div>
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-binocylars-icon.png" alt="">
+                            <p class="oos__hov-p">Без ожидания в очереди </p>
+                        </div>
+                    </div>
+                    <div class="oos__cards-box">
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-padlock-icon.png" alt="">
+                            <p class="oos__hov-p">По бонусным ценам</p>
+                        </div>
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-home-icon.png" alt="">
+                            <p class="oos__hov-p">С бесплатной доставкой (на следующий рабочий день при заказе от
+                                30000тг)</p>
+                        </div>
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-female-icon.png" alt="">
+                            <p class="oos__hov-p">С поддержкой онлайн-консультанта</p>
+                        </div>
+                        <div class="oos__card">
+                            <img class="oos__hov-img" src="./img/online-order-img-file-icon.png" alt="">
+                            <p class="oos__hov-p">Что можно заказать Простая печать из файла Фото на документы
+                                Полиграфическую продукцию Интерьерную печать Сувенир</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products-section">
+            <div class="container">
+                <h3>Продукция</h3>
+                <div class="ps__block">
+                    <div class="ps__cards-box">
+                        <div class="ps__card">
+                            <img src="./img/products-1.png" alt="">
+                            <p>Креативные принты на футболках </p>
+                        </div>
+                        <div class="ps__card">
+                            <img src="./img/products-2.png" alt="">
+                            <p>Сувениры</p>
+                        </div>
+                        <div class="ps__card">
+                            <img src="./img/products-3.png" alt="">
+                            <p>Наклейки</p>
+                        </div>
+                        <div class="ps__card">
+                            <img src="./img/products-4.png" alt="">
+                            <p> Принты со своими любимыми персонажами</p>
+                        </div>
+                    </div>
+                    <div class="ps__cards-box">
+                        <div class="ps__card">
+                            <img src="./img/products-5.png" alt="">
+                            <p>Маски</p>
+                        </div>
+                        <div class="ps__card">
+                            <img src="./img/products-6.png" alt="">
+                            <p>Логотипы </p>
+                        </div>
+                        <div class="ps__card">
+                            <img src="./img/products-7.png" alt="">
+                            <p>Кепки с логотипом</p>
+                        </div>
+                        <div class="ps__card">
+                            <img src="./img/products-8.png" alt="">
+                            <p>Тетради</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-section">
+            <div class="container">
+                <h3>ЕСЛИ У ВАС ОСТАЛИСЬ ВОПРОСЫ:</h3>
+                <div class="cs__block">
+                    <div class="cs__block--left">
+                        <h4>Все вопросы по оформлению и состоянию онлайн-заказа можно задать:</h4>
+                        <ul class="cs-bl__list">
+                            <li>
+                                <img src="./img/contact-icon-1.png" alt="">
+                                <p>Менеджеру онлайн-отдела по телефону: <br> <br> <a href="tel:+7(775)976 08 77">+7(775)976 08 77,</a><a href="tel:8(771)13 43">  8(771)13 43</a></p>
+                            </li>
+                            <li>
+                                <img src="./img/contact-icon-2.png" alt="">
+                                <a href="#">Оставить заявку на сайте</a>
+                            </li>
+                            <li>
+                                <img src="./img/contact-icon-3.png" alt="">
+                                <a href="mailto:zhanama.print@mail.ru">Zhanama.print@mail.ru</a>
+                            </li>
+                            <li>
+                                <img src="./img/contact-icon-4.png" alt="">
+                                <a href="#">Printsburg.ru</a>
+                            </li>
+                            <li>
+                                <img src="./img/contact-icon-5.png" alt="">
+                                <a href="#">@zharnamaprint_ast</a>
+                            </li>
+                            <li>
+                                <img src="./img/contact-icon-6.png" alt="">
+                                <a href="https://wa.me/77711343">+7 771 13 43</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cs__block--right">
+                        <img src="./img/contact-section-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer--left">
+                    <img src="./img/footer-logo.png" alt="">
+                </div>
+                <div class="footer--center">
+                    <ul>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Продукция</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer--right">
+                    <img src="./img/header-nav-whatsupp.svg" alt="">
+                    <img src="./img/header-nav-instagram.svg" alt="">
+                    <img src="./img/header-nav-facebook.svg" alt="">
+                </div>
+            </div>
+            <div class="footer--bottom">
+                <p>Copyright</p>
+                <p>Zhanama.print</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
